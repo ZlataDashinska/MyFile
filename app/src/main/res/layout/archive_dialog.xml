@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <!-- android:background="@drawable/bottom_navigation_background"-->
+
+    <TextView
+        android:id="@+id/tvDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/archive"
+        android:textAlignment="center"
+        android:textColor="@color/secondaryDarkColor"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/enter_name"
+        android:textColor="@color/secondaryColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDesc" />
+
+    <RadioGroup
+        android:id="@+id/rgCoiseType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etName">
+
+        <RadioButton
+            android:id="@+id/rbZip"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="@string/zip"
+            android:textAlignment="textStart"
+            android:textColor="@color/secondaryColor" />
+
+        <RadioButton
+            android:id="@+id/rb7z"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="@string/seven_z"
+            android:textAlignment="textStart"
+            android:textColor="@color/secondaryColor" />
+
+        <RadioButton
+            android:id="@+id/rbTarGz"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="@string/tarGz"
+            android:textAlignment="textStart"
+            android:textColor="@color/secondaryColor" />
+    </RadioGroup>
+
+    <!--<ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="16dp"
+        android:visibility="invisible" />-->
+</LinearLayout>

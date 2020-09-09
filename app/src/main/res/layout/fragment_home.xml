@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="502dp"
+    android:background="@android:color/background_light"
+    tools:context=".HomeFragment">
+
+    <LinearLayout
+        android:id="@+id/lLayoutMemory"
+        android:layout_width="@dimen/categorySize"
+        android:layout_height="@dimen/categorySize"
+        android:layout_marginStart="@dimen/categoryMarginStart"
+        android:layout_marginTop="@dimen/categoryMarginTop"
+        android:background="@drawable/home_icon_background"
+        android:clickable="true"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/lLayoutPhoto"
+        app:layout_constraintEnd_toStartOf="@id/lLayoutSD"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivMemory"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="4dp"
+            android:clickable="true"
+            app:srcCompat="@drawable/ic_memory" />
+
+        <TextView
+            android:id="@+id/tvMemory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="@string/memory"
+            android:textColor="@color/secondaryDarkColor"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lLayoutSD"
+        android:layout_width="@dimen/categorySize"
+        android:layout_height="@dimen/categorySize"
+        android:layout_marginTop="@dimen/categoryMarginTop"
+        android:layout_marginEnd="@dimen/categoryMarginStart"
+        android:background="@drawable/home_icon_background"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/lLayoutVideo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/lLayoutMemory"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivSd"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="18sp"
+            app:srcCompat="@drawable/ic_sd_card"
+            tools:layout_editor_absoluteX="259dp"
+            tools:layout_editor_absoluteY="119dp" />
+
+        <TextView
+            android:id="@+id/tvSD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:text="@string/sd_card"
+            android:textColor="@color/secondaryDarkColor"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lLayoutPhoto"
+        android:layout_width="@dimen/categorySize"
+        android:layout_height="@dimen/categorySize"
+        android:layout_marginStart="@dimen/categoryMarginStart"
+        android:layout_marginTop="@dimen/categoryMarginTop"
+        android:background="@drawable/home_icon_background"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/lLayoutDoc"
+        app:layout_constraintEnd_toStartOf="@id/lLayoutVideo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lLayoutMemory">
+
+        <ImageView
+            android:id="@+id/ivImages"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@drawable/ic_images" />
+
+        <TextView
+            android:id="@+id/tvImages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:text="@string/images"
+            android:textColor="@color/secondaryDarkColor"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lLayoutVideo"
+        android:layout_width="@dimen/categorySize"
+        android:layout_height="@dimen/categorySize"
+        android:layout_marginTop="@dimen/categoryMarginTop"
+        android:layout_marginEnd="@dimen/categoryMarginStart"
+        android:background="@drawable/home_icon_background"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/lLayoutMusic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/lLayoutPhoto"
+        app:layout_constraintTop_toBottomOf="@+id/lLayoutSD">
+
+        <ImageView
+            android:id="@+id/ivVideos"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@drawable/ic_video" />
+
+        <TextView
+            android:id="@+id/tvVideos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/video"
+            android:textAlignment="center"
+            android:textColor="@color/secondaryDarkColor"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lLayoutDoc"
+        android:layout_width="@dimen/categorySize"
+        android:layout_height="@dimen/categorySize"
+        android:layout_marginStart="@dimen/categoryMarginStart"
+        android:layout_marginTop="@dimen/categoryMarginTop"
+        android:layout_marginBottom="@dimen/categoryMarginTop"
+        android:background="@drawable/home_icon_background"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/lLayoutMusic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lLayoutPhoto">
+
+        <ImageView
+            android:id="@+id/ivDoc"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@drawable/ic_list_alt"
+            tools:layout_editor_absoluteX="246dp"
+            tools:layout_editor_absoluteY="458dp" />
+
+        <TextView
+            android:id="@+id/tvDoc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/doc"
+            android:textAlignment="center"
+            android:textColor="@color/secondaryDarkColor"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lLayoutMusic"
+        android:layout_width="@dimen/categorySize"
+        android:layout_height="@dimen/categorySize"
+        android:layout_marginTop="@dimen/categoryMarginTop"
+        android:layout_marginEnd="@dimen/categoryMarginStart"
+        android:layout_marginBottom="@dimen/categoryMarginTop"
+        android:background="@drawable/home_icon_background"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/lLayoutDoc"
+        app:layout_constraintTop_toBottomOf="@+id/lLayoutVideo">
+
+        <ImageView
+            android:id="@+id/ivMusic"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@drawable/ic_music"
+            tools:layout_editor_absoluteX="246dp"
+            tools:layout_editor_absoluteY="281dp" />
+
+        <TextView
+            android:id="@+id/tvMusic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:text="@string/audio"
+            android:textColor="@color/secondaryDarkColor"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

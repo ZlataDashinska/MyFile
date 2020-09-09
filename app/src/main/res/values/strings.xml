@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Diploma</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="createFolder">Create folder</string>
+    <string name="createFile">Create file</string>
+    <string name="renameFile">Rename</string>
+    <string name="delete">Delete</string>
+    <string name="copy">Copy</string>
+    <string name="paste">Paste</string>
+    <string name="move">Переместить</string>
+    <string name="rename">Rename</string>
+    <string name="arch">Compress</string>
+    <string name="de_arch">Extract</string>
+    <string name="share">Share</string>
+    <string name="archive">Compressing</string>
+    <string name="history">History</string>
+    <string name="storage">Memory control</string>
+    <string name="home">Home</string>
+    <string name="memory">Phone memory</string>
+    <string name="audio">Music</string>
+    <string name="video">Video</string>
+    <string name="images">Photo</string>
+    <string name="sd_card">SD card</string>
+    <string name="doc">Documents</string>
+    <string name="msg_no_app">Application not found</string>
+    <string name="msg_no_sd">SD card not found.</string>
+    <string name="search">Search</string>
+    <string name="enter_name">Name</string>
+    <string name="zip">.zip</string>
+    <string name="seven_z">.7z</string>
+    <string name="tarGz">.tar.gz</string>
+    <string name="ram">RAM</string>
+    <string name="nameError">Object already exist</string>
+</resources>

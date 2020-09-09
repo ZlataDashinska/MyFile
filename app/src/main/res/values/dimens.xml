@@ -1,0 +1,6 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="categorySize">140dp</dimen>
+    <dimen name="categoryMarginStart">32dp</dimen>
+    <dimen name="categoryMarginTop">16dp</dimen>
+</resources>

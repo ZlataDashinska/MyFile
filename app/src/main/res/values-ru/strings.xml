@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">WellSystem</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="createFolder">Создать папку</string>
+    <string name="createFile">Создать файл</string>
+    <string name="renameFile">Переименовать</string>
+    <string name="delete">Удалить</string>
+    <string name="copy">Копировать</string>
+    <string name="paste">Вставить</string>
+    <string name="move">Переместить</string>
+    <string name="rename">Переименовать</string>
+    <string name="arch">Архивировать</string>
+    <string name="de_arch">Извлечь</string>
+    <string name="share">Поделиться</string>
+    <string name="archive">Архивирование</string>
+    <string name="to_favorite">В избранное</string>
+    <string name="favorite">Избранное</string>
+    <string name="history">Недавние</string>
+    <string name="storage">Контроль памяти</string>
+    <string name="home">Главная</string>
+    <string name="memory">Память телефона</string>
+    <string name="audio">Музыка</string>
+    <string name="video">Видео</string>
+    <string name="images">Фотографии</string>
+    <string name="sd_card">SD карта</string>
+    <string name="doc">Документы</string>
+    <string name="msg_no_app">Не найдено приложение, поддерживающее данный тип файлов.</string>
+    <string name="msg_no_sd">SD карта не обнаружена.</string>
+    <string name="search">Поиск</string>
+    <string name="enter_name">Имя</string>
+    <string name="zip">.zip</string>
+    <string name="seven_z">.7z</string>
+    <string name="tarGz">.tar.gz</string>
+    <string name="ram">ОЗУ</string>
+    <string name="nameError">Объект уже существует</string>
+</resources>
